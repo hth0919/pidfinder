@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d887cf1b-05bc-46dc-893e-c8c3bb623f37" name="ce-m" url="http://210.117.30.218">
+        <fileTransfer host="210.117.30.218" port="10015" rootFolder="/root/user/hth" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="10015" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="118d5cbd-6f73-4a51-a9a6-22f38c33213d" name="mcpmaster" url="http://210.117.30.218">
+        <fileTransfer host="210.117.30.218" port="10000" rootFolder="/root/user/hth" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="10000" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
