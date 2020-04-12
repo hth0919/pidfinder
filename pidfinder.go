@@ -63,10 +63,10 @@ func NewPS() []ps {
 	return pslist
 }
 
-func SearchPID(name string) string {
-	for i:= 0;i<len(pslist);i++ {
-		if pslist[i].cmd == name {
-			return pslist[i].pid
+func SearchPID(list []ps, name string) string {
+	for i:= 0;i<len(list);i++ {
+		if list[i].cmd == name {
+			return list[i].pid
 		}
 	}
 	return "err"
