@@ -47,7 +47,7 @@ func cmdtostruct (pscommandline string) {
 }
 
 
-func NewPS() {
+func NewPS() []ps {
 	pslist = make([]ps, 0, 0)
 	pscommand := exec.Command("bash", "-c", "ps -e")
 	pscommandlist, err := pscommand.Output()
@@ -60,6 +60,7 @@ func NewPS() {
 	for i:=1;i<len(pscommandline);i++ {
 		cmdtostruct(pscommandline[i])
 	}
+	return pslist
 }
 
 func SearchPID(name string) string {
