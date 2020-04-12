@@ -1,4 +1,4 @@
-package main
+package pidfinder
 
 import (
 	"os/exec"
